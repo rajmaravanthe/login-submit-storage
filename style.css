@@ -1,0 +1,14 @@
+#loginBlock, #registerBlock, #back {
+    visibility: hidden ;
+    position: absolute;
+}
+body {
+    margin-left: 500px;
+}
+input, button {
+    padding: 5px;
+    margin: 5px;
+}
+#back {
+    margin: 150px 0px 0px 200px;
+}

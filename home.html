@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Hide-Jquery</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+
+    <body>
+        <h1>MySelfieTech</h1><br/><br/>
+
+        <div>Welcome to <span id="user"></span></div>
+        <button name="logout" id="logout">Logout</button>
+        <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
+        <script>
+            $(document).ready(function () {
+                $("#user").html(localStorage.getItem("name"));
+                $("#logout").on("click", function () {
+                    window.location = "main.html";
+                })
+            })
+        </script>
+    </body>
+</body>
+
+</html>
